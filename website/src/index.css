@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-champagne: #F5F2ED;
+  --color-champagne-light: #FAF8F5;
+  --color-champagne-dark: #EBE8E3;
+  --color-ink: #0A0A0A;
+  --color-gold: #D4AF37;
+  --color-emerald-editorial: #064E3B;
+}
+
+:root {
+  --gold: #D4AF37;
+  --champagne: #F5F2ED;
+  --ink: #0A0A0A;
+  --emerald: #064E3B;
+  --glass: rgba(255, 255, 255, 0.4);
+  --serif: 'Cormorant Garamond', serif;
+  --sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+  background-color: #F5F2ED;
+  color: #0A0A0A;
+  margin: 0;
+}
+
+.dark body, body.dark {
+  background-color: #0A0A0A;
+  color: #F5F2ED;
+}
+
+/* Custom Editorial Utility Classes */
+.editorial-btn-primary {
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border: 1px solid #0A0A0A;
+  border-radius: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.editorial-btn-primary:hover {
+  background-color: #262626;
+  border-color: #262626;
+}
+
+.dark .editorial-btn-primary {
+  background-color: #F5F2ED;
+  color: #0A0A0A;
+  border-color: #F5F2ED;
+}
+
+.dark .editorial-btn-primary:hover {
+  background-color: #EBE8E3;
+  border-color: #EBE8E3;
+}
+
+.editorial-btn-secondary {
+  border-bottom: 1px solid #0A0A0A;
+  padding-bottom: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.dark .editorial-btn-secondary {
+  border-bottom-color: #F5F2ED;
+  color: #F5F2ED;
+}
+
+.editorial-pill {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  border-radius: 9999px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+.dark .editorial-pill {
+  background: rgba(10, 10, 10, 0.6);
+  border-color: rgba(212, 175, 55, 0.3);
+  color: #D4AF37;
+}
