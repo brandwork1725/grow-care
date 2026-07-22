@@ -1,6 +1,0 @@
-{
-  "name": "GROW CARE",
-  "description": "Ultra-premium luxury 3D e-commerce experience for GROW CARE featuring interactive 3D product showcase, AI concierge, curated collections, slide-out cart, and full admin management dashboard.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
